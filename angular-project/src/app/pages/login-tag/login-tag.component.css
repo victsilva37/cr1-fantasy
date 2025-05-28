@@ -1,0 +1,23 @@
+#login-tag-container {
+    background-image: url(../../assets/img/banner-login.png);
+    background-position: 0 0; /* Empieza desde el origen */
+    background-repeat: repeat; /* Repetir horizontalmente */
+    background-size: auto; /* Ajustar según tamaño original */
+    animation: moveBackground 10s linear infinite; /* Animación infinita */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    opacity: 0.7;
+}
+
+/* Definición de la animación */
+@keyframes moveBackground {
+    from {
+        background-position: 0 0; /* Inicio */
+    }
+    to {
+        background-position: -100% 0; /* Mueve hacia la izquierda */
+    }
+}
